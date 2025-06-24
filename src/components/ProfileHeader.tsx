@@ -13,7 +13,7 @@ const ProfileHeader = () => {
             <h1 className="font-bold mb-2 mx-0 text-white text-xl">
               sxdamustd?e #FF47
             </h1>
-            <p className="text-gray-300 mb-3">Immortal 2 • 467 RR • Акт 3</p>
+            <p className="text-gray-300 mb-3">Immortal 3 • 467 RR • Акт 3</p>
             <div className="flex gap-2">
               <Badge className="bg-[#FF4655] text-white border-0 hover:bg-[#FF4655]/80">
                 Основной Jett
