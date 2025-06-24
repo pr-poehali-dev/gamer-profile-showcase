@@ -5,7 +5,7 @@ const StatsOverview = () => {
   const valorantStats = [
     {
       title: "Текущий ранг",
-      value: "Immortal 2",
+      value: "Immortal 3",
       icon: "Crown",
       color: "text-purple-400",
     },
