@@ -2,37 +2,40 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 
 const StatsOverview = () => {
-  const stats = [
+  const valorantStats = [
     {
-      title: "Общее время",
-      value: "920 ч",
-      icon: "Clock",
-      color: "text-blue-400",
+      title: "Текущий ранг",
+      value: "Immortal 2",
+      icon: "Crown",
+      color: "text-purple-400",
     },
     {
-      title: "Игр пройдено",
-      value: "23",
-      icon: "CheckCircle",
+      title: "Всего матчей",
+      value: "547",
+      icon: "Activity",
+      color: "text-[#FF4655]",
+    },
+    {
+      title: "Винрейт",
+      value: "67%",
+      icon: "TrendingUp",
       color: "text-green-400",
     },
     {
-      title: "Достижений",
-      value: "247",
-      icon: "Trophy",
-      color: "text-yellow-400",
-    },
-    {
-      title: "Средний рейтинг",
-      value: "4.7",
-      icon: "Star",
-      color: "text-purple-400",
+      title: "Любимый агент",
+      value: "Jett",
+      icon: "User",
+      color: "text-blue-400",
     },
   ];
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-      {stats.map((stat, index) => (
-        <Card key={index} className="bg-slate-800 border-slate-700">
+      {valorantStats.map((stat, index) => (
+        <Card
+          key={index}
+          className="bg-gray-900 border-gray-700 hover:border-[#FF4655]/40 transition-colors"
+        >
           <CardContent className="p-4">
             <div className="flex items-center gap-3">
               <div className={`${stat.color}`}>
@@ -40,7 +43,7 @@ const StatsOverview = () => {
               </div>
               <div>
                 <div className="text-xl font-bold text-white">{stat.value}</div>
-                <div className="text-sm text-slate-400">{stat.title}</div>
+                <div className="text-sm text-gray-400">{stat.title}</div>
               </div>
             </div>
           </CardContent>

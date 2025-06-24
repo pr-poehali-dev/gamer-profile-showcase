@@ -3,34 +3,33 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const ProfileHeader = () => {
   return (
-    <Card className="bg-gradient-to-r from-slate-900 to-slate-800 border-slate-700">
+    <Card className="bg-gradient-to-r from-gray-900 to-black border-[#FF4655]/20">
       <CardContent className="p-6">
         <div className="flex items-center gap-6">
-          <div className="w-20 h-20 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-2xl font-bold text-white">
-            ГК
+          <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#FF4655] to-red-600 flex items-center justify-center text-2xl font-bold text-white border-2 border-red-400">
+            ВЛ
           </div>
           <div className="flex-1">
-            <h1 className="font-bold mb-2 mx-0 text-[#e769e1b8] text-xl">
-              sxdamustd?e [FF]
+            <h1 className="font-bold mb-2 mx-0 text-white text-xl">
+              sxdamustd?e #FF47
             </h1>
-            <p className="text-slate-300 mb-3">
-              Уровень 47 • В игре уже 3 года
-            </p>
+            <p className="text-gray-300 mb-3">Immortal 2 • 1847 RR • Акт 3</p>
             <div className="flex gap-2">
-              <Badge variant="secondary" className="bg-purple-500 text-white">
-                Про игрок
+              <Badge className="bg-[#FF4655] text-white border-0 hover:bg-[#FF4655]/80">
+                Основной Jett
               </Badge>
               <Badge
                 variant="outline"
-                className="border-blue-400 text-blue-400"
+                className="border-green-400 text-green-400 bg-green-400/10"
               >
-                Онлайн
+                В матче
               </Badge>
             </div>
           </div>
-          <div className="text-right text-slate-300">
-            <div className="text-sm">Последняя игра</div>
-            <div className="font-semibold text-white">2 часа назад</div>
+          <div className="text-right text-gray-300">
+            <div className="text-sm">Последний матч</div>
+            <div className="font-semibold text-white">Победа • 13-8</div>
+            <div className="text-xs text-gray-400">15 минут назад</div>
           </div>
         </div>
       </CardContent>

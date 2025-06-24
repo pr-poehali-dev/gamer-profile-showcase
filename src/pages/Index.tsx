@@ -10,61 +10,63 @@ const Index = () => {
         <ProfileHeader />
 
         <div className="mt-8">
-          <Tabs defaultValue="games" className="w-full">
-            <TabsList className="grid w-full grid-cols-4 bg-slate-800 border-slate-700">
+          <Tabs defaultValue="matches" className="w-full">
+            <TabsList className="grid w-full grid-cols-4 bg-gray-800 border-gray-700">
               <TabsTrigger
-                value="profile"
-                className="text-slate-300 data-[state=active]:text-white"
+                value="matches"
+                className="text-gray-300 data-[state=active]:text-white data-[state=active]:bg-[#FF4655]"
               >
-                Профиль
+                Матчи
               </TabsTrigger>
               <TabsTrigger
-                value="games"
-                className="text-slate-300 data-[state=active]:text-white"
+                value="agents"
+                className="text-gray-300 data-[state=active]:text-white data-[state=active]:bg-[#FF4655]"
               >
-                Игры
+                Агенты
               </TabsTrigger>
               <TabsTrigger
-                value="ratings"
-                className="text-slate-300 data-[state=active]:text-white"
+                value="rankings"
+                className="text-gray-300 data-[state=active]:text-white data-[state=active]:bg-[#FF4655]"
               >
-                Рейтинги
+                Рейтинг
               </TabsTrigger>
               <TabsTrigger
-                value="gallery"
-                className="text-slate-300 data-[state=active]:text-white"
+                value="clips"
+                className="text-gray-300 data-[state=active]:text-white data-[state=active]:bg-[#FF4655]"
               >
-                Галерея
+                Клипы
               </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="profile" className="mt-6">
-              <div className="text-center text-slate-400 py-12">
-                <h3 className="text-xl font-semibold mb-2">Раздел профиля</h3>
-                <p>Здесь будет подробная информация о игроке</p>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="games" className="mt-6">
+            <TabsContent value="matches" className="mt-6">
               <StatsOverview />
               <GamesList />
             </TabsContent>
 
-            <TabsContent value="ratings" className="mt-6">
-              <div className="text-center text-slate-400 py-12">
-                <h3 className="text-xl font-semibold mb-2">
-                  Рейтинги и достижения
+            <TabsContent value="agents" className="mt-6">
+              <div className="text-center text-gray-400 py-12">
+                <h3 className="text-xl font-semibold mb-2 text-white">
+                  Статистика по агентам
                 </h3>
-                <p>Здесь будут отображаться рейтинги по играм</p>
+                <p>Детальная статистика игры за разных агентов</p>
               </div>
             </TabsContent>
 
-            <TabsContent value="gallery" className="mt-6">
-              <div className="text-center text-slate-400 py-12">
-                <h3 className="text-xl font-semibold mb-2">
-                  Галерея скриншотов
+            <TabsContent value="rankings" className="mt-6">
+              <div className="text-center text-gray-400 py-12">
+                <h3 className="text-xl font-semibold mb-2 text-white">
+                  Рейтинговая история
                 </h3>
-                <p>Здесь будут скриншоты из игр</p>
+                <p>График изменения ранга и RR по актам</p>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="clips" className="mt-6">
+              <div className="text-center text-gray-400 py-12">
+                <h3 className="text-xl font-semibold mb-2 text-white">
+                  Лучшие моменты
+                </h3>
+                <p>Сохранённые клипы и хайлайты матчей</p>
               </div>
             </TabsContent>
           </Tabs>
