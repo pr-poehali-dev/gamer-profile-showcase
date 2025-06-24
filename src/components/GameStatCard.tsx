@@ -49,7 +49,7 @@ const GameStatCard = ({
               <Icon name="Target" size={14} />
               RR
             </div>
-            <div className="font-bold text-[#FF4655] text-lg">{rr}</div>
+            <div className="font-bold text-[#FF4655] text-lg">467</div>
           </div>
           <div className="bg-gray-800/50 p-3 rounded-lg">
             <div className="flex items-center gap-1 text-gray-400 text-xs mb-1">
