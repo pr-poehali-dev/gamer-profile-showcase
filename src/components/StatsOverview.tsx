@@ -11,7 +11,7 @@ const StatsOverview = () => {
     },
     {
       title: "Всего матчей",
-      value: "547",
+      value: "6856",
       icon: "Activity",
       color: "text-[#FF4655]",
     },
