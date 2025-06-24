@@ -38,7 +38,7 @@ const GameStatCard = ({
             </div>
           </div>
           <Badge className="bg-gradient-to-r from-[#FF4655] to-red-600 text-white border-0">
-            {rank}
+            Immortal 3
           </Badge>
         </div>
       </CardHeader>
