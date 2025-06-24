@@ -10,8 +10,8 @@ const ProfileHeader = () => {
             ГК
           </div>
           <div className="flex-1">
-            <h1 className="text-2xl font-bold text-white mb-2">
-              GamerKing2024
+            <h1 className="font-bold mb-2 mx-0 text-[#e769e1b8] text-xl">
+              sxdamustd?e [FF]
             </h1>
             <p className="text-slate-300 mb-3">
               Уровень 47 • В игре уже 3 года
