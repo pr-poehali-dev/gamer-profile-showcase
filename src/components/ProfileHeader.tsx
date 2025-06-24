@@ -6,9 +6,7 @@ const ProfileHeader = () => {
     <Card className="bg-gradient-to-r from-gray-900 to-black border-[#FF4655]/20">
       <CardContent className="p-6">
         <div className="flex items-center gap-6">
-          <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#FF4655] to-red-600 flex items-center justify-center text-2xl font-bold text-white border-2 border-red-400">
-            ВЛ
-          </div>
+          <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#FF4655] to-red-600 flex items-center justify-center text-2xl font-bold text-white border-2 border-red-400"></div>
           <div className="flex-1">
             <h1 className="font-bold mb-2 mx-0 text-white text-xl">
               sxdamustd?e #FF47
